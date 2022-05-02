@@ -1,0 +1,20 @@
+program testerProg ::
+    var A, B, C, D, G: int;
+    var E, F: bool;
+{
+    A := 15;
+    B := A*2;
+    C := B%A;
+    E := C<B;
+    if (E) then {
+        D := 15;
+    }else{
+        D := 21;
+    }endif;
+    F := (D+A)<>B;
+    if (!(F)) then {
+        read G;
+    } else{
+        G := ~1;
+    }endif;
+}
